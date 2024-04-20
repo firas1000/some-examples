@@ -18,7 +18,7 @@ media
   
   
  
-    <meta name="description" content="developer resume">   
+    <meta name="description" content="highrise structure fea/cae simulation nastran hypermesh etabs staad c++ javascript github resume "firas halabiya">   
       
     <head> 
     
@@ -506,8 +506,8 @@ html {
 /*  xxxxxxxxxxxxxxxxx MOBILE  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  */
 @media screen and (max-width: 600px)  {
       
-   /*       flex-direction: column;  */
-   display :block;
+   /*       flex-direction: column;  
+   display :block;          */
         
 *, *::before, *::after {
     padding: 0;
@@ -524,7 +524,7 @@ body {
   perspective: 40em;
  /*             overflow: hidden;       */
   font-size: 2vh;
-  
+   z-index: 1;
   
   * {
     transform-style: preserve-3d;
@@ -534,7 +534,7 @@ body {
 .scene  {
      position: absolute;
   animation: scene 60s infinite linear;
-  
+   z-index: 1;
   --duration: 4s;
   right: auto;
         }
@@ -544,6 +544,7 @@ body {
 }
 
 .mainStick {
+    z-index: 1;
   --angle: asin(3/5);
   position: absolute;
   inset: -0px -10em;
@@ -618,6 +619,7 @@ body {
 }
 
 .sticks {
+    z-index: 1;
   .stick {
     position: absolute;
     animation: stick calc(var(--duration) * 4) calc(var(--duration) / -2 * var(--s)) infinite linear;
@@ -666,6 +668,7 @@ body {
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  */
 
 .header {
+    z-index: 2;
 position: absolute;
 width: 90%;
  height: 200px;   
@@ -676,6 +679,7 @@ width: 90%;
 }
 
 .inside-header    {
+    z-index: 2;
  box-shadow: 5px 5px 5px rgba(202, 109, 109, 0.7);
  font-size: 30px;
  font: normal 28px Cookie, Arial, Helvetica, sans-serif;
@@ -711,6 +715,7 @@ width: 90%;
 
        
         #square1 {
+            z-index: 1;
             animation: color1 4s linear infinite alternate; 
            /*  background-color: #f00;           red */
             position: absolute;
@@ -722,6 +727,7 @@ width: 90%;
         }
 
         #square2 {
+            z-index: 1;
             animation: color2 4s linear  infinite alternate; 
            /*   background-color: #0f0;                   green */      
             position: absolute;
@@ -734,6 +740,7 @@ width: 90%;
 
 
         #square3 {
+            z-index: 1;
             animation: color1 4s linear  infinite alternate; 
            /*   background-color: #0f0;                   green */      
             position: absolute;
@@ -745,6 +752,7 @@ width: 90%;
         }
 
        #square4 {
+           z-index: 1;
         animation: color2 4s linear  infinite alternate; 
        /*   background-color: #0f0;                   green */      
         position: absolute;
@@ -756,6 +764,7 @@ width: 90%;
     }
 
     #square5 {
+        z-index: 1;
        animation: color1 4s linear  infinite alternate; 
       /*   background-color: #0f0;                   green */      
        position: absolute;
@@ -767,6 +776,7 @@ width: 90%;
    }
   
    #square6 {
+       z-index: 1;
        animation: color2 4s linear  infinite alternate; 
       /*   background-color: #0f0;                   green */      
        position: absolute;
@@ -778,6 +788,7 @@ width: 90%;
    }
 
    #square7 {
+       z-index: 1;
      animation: color1 4s linear  infinite alternate; 
     /*   background-color: #0f0;                   green */      
      position: absolute;
@@ -789,6 +800,7 @@ width: 90%;
  }
  
        #square8 {
+           z-index: 1;
    animation: color2 4s linear  infinite alternate; 
   /*   background-color: #0f0;                   green */      
    position: absolute;
@@ -835,7 +847,7 @@ width: 90%;
  }
  } 
 
-.para {
+.para   {
    display : inline;
 position:absolute;
 width: 100%;
@@ -844,6 +856,7 @@ font-size: 25px;
 }
 
 .para1    {
+    z-index: 2;
  /*     display : inline;
    position:absolute;         */
 animation: color20 4s linear  infinite alternate;  
@@ -852,36 +865,42 @@ top: 115px;
 }
 
 .para2   {
+    z-index: 2;
 animation: color10 4s linear  infinite alternate;   
 top: 240px;
 left: 110px;
 }
 
 .para3  {
+    z-index: 2;
   animation: color20 4s linear  infinite alternate;   
   top: 340px;
   left: 210px;
 }
 
 .para4   {
+    z-index: 2;
   animation: color10 4s linear  infinite alternate;   
   top: 440px;
   left: 110px;
 }
 
 .para5   {
+    z-index: 2;
   animation: color20 4s linear  infinite alternate;   
   top: 535px;
   left: 210px;
 }
 
 .para6  {
+    z-index: 2;
   animation: color10 4s linear  infinite alternate;   
   top: 635px;
   left: 110px;
 }
 
 .para7  {
+    z-index: 2;
   top: 735px;
   left: 210px;
   font-size: 15px;
@@ -892,6 +911,7 @@ color: red;
 }
 
 #horizontal-1 {
+    z-index: 2;
     animation: color2 4s linear infinite; 
     position:absolute;
     top: 100px;
@@ -901,6 +921,7 @@ color: red;
     }                  
 
   #horizontal-2 {
+      z-index: 2;
   animation: color1 4s linear infinite; 
   position:absolute;
   top: 200px;
@@ -909,7 +930,8 @@ color: red;
   height: 1px;  
   }                  
 
-  #horizontal-3 {
+  #horizontal-3 { 
+     z-index: 2;
   animation: color2 4s linear infinite; 
   position:absolute;
   top: 300px;
@@ -919,6 +941,7 @@ color: red;
   }                  
 
 #horizontal-4 {
+    z-index: 2;
   animation: color1 4s linear infinite; 
   position:absolute;
   top: 400px;
@@ -928,6 +951,7 @@ color: red;
   }                 
   
 #horizontal-5 {
+    z-index: 2;
   animation: color2 4s linear infinite; 
   position:absolute;
   top: 500px;
@@ -937,6 +961,7 @@ color: red;
   }                   
   
 #horizontal-6 {
+    z-index: 2;
   animation: color1 4s linear infinite; 
   position:absolute;
   top: 600px;
@@ -946,6 +971,7 @@ color: red;
   }                  
   
   #horizontal-7 {
+      z-index: 2;
   animation: color2 4s linear infinite; 
   position:absolute;
   top: 700px;
@@ -955,6 +981,7 @@ color: red;
   }                  
 
 .text-shade {
+    z-index: 2;
   text-shadow: 2px 2px 2px grey;
 }
 
@@ -963,6 +990,7 @@ html {
 }
 
 #banner {
+    z-index: 2;
   width: 100%;
   height: 50px;
   background: linear-gradient(270deg, rgb(64, 12, 99), white);
