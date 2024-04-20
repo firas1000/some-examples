@@ -502,14 +502,10 @@ html {
 }
 }
       
-
+/*  xxxxxxxxxxxxxxxxx MOBILE  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  */
 @media screen and (max-width: 600px)  {
-        .scene  {     right: 50%;  
-          flex-direction: column;  
-       /*      transform: translate(-50%, 0);       */
-       transform : none;
-        }
       
+          flex-direction: column;      
         
 *, *::before, *::after {
     padding: 0;
@@ -538,7 +534,7 @@ body {
   animation: scene 60s infinite linear;
   
   --duration: 4s;
-  right: 200px;
+  right: auto;
         }
 
 @keyframes scene {
